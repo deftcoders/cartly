@@ -1,0 +1,916 @@
+# Cartly – Conversion Focused WooCommerce Side Cart, Sticky Add to Cart & Upsells
+# Copyright (C) 2024 codelitix
+# This file is distributed under the same license as the Cartly plugin.
+# CodeLitix <support@cartly.intellectkit.com>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Cartly 1.0.0\n"
+"Report-Msgid-Bugs-To: https://codecanyon.net/user/codelitix\n"
+"POT-Creation-Date: 2026-02-01T00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: CodeLitix <support@cartly.intellectkit.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: codelitix / custom extractor\n"
+"X-Domain: cartly\n"
+
+msgid "%d item in cart"
+msgstr ""
+
+msgid "3-tier milestone track inside cart"
+msgstr ""
+
+msgid "42, 87, 114 (comma separated)"
+msgstr ""
+
+msgid "<strong>Cartly</strong> requires %s to be installed and active. The plugin has not been activated."
+msgstr ""
+
+msgid "AI-style product strategy"
+msgstr ""
+
+msgid "Access denied."
+msgstr ""
+
+msgid "Add something you love"
+msgstr ""
+
+msgid "Add to Cart"
+msgstr ""
+
+msgid "Add urgency at checkout"
+msgstr ""
+
+msgid "Add {amount} more for 10% off!"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "All Devices"
+msgstr ""
+
+msgid "All Pages"
+msgstr ""
+
+msgid "Announcement bar inside cart"
+msgstr ""
+
+msgid "Appears inside open cart drawer"
+msgstr ""
+
+msgid "Appears when native ATC button scrolls out of view"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Apply coupon code"
+msgstr ""
+
+msgid "Auto Frontend"
+msgstr ""
+
+msgid "Auto Frontend Active"
+msgstr ""
+
+msgid "Auto Open Behavior"
+msgstr ""
+
+msgid "Auto Open on Add to Cart"
+msgstr ""
+
+msgid "Auto Open on Mobile"
+msgstr ""
+
+msgid "Auto-suggests related products to boost average order value. Zero config required."
+msgstr ""
+
+msgid "Background Style"
+msgstr ""
+
+msgid "Badge Text"
+msgstr ""
+
+msgid "Bar Style"
+msgstr ""
+
+msgid "Behavior"
+msgstr ""
+
+msgid "Below Cart Items"
+msgstr ""
+
+msgid "Best Sellers"
+msgstr ""
+
+msgid "Blossom"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Boost conversions and average order value with a modern WooCommerce cart drawer, smart upsells, and free shipping goals. Your cart is already live — customize it in seconds."
+msgstr ""
+
+msgid "Border Radius"
+msgstr ""
+
+msgid "Bottom Sheet"
+msgstr ""
+
+msgid "Bottom sheet drawer, swipe-to-close gesture, sticky bottom cart button. All built-in."
+msgstr ""
+
+msgid "Bounce"
+msgstr ""
+
+msgid "Brown · Premium"
+msgstr ""
+
+msgid "Button Animation"
+msgstr ""
+
+msgid "Button Label"
+msgstr ""
+
+msgid "Button Radius"
+msgstr ""
+
+msgid "Button Style"
+msgstr ""
+
+msgid "Button Text"
+msgstr ""
+
+msgid "Card (image + details)"
+msgstr ""
+
+msgid "Cart"
+msgstr ""
+
+msgid "Cart Active"
+msgstr ""
+
+msgid "Cart Background"
+msgstr ""
+
+msgid "Cart Disabled"
+msgstr ""
+
+msgid "Cart Enabled"
+msgstr ""
+
+msgid "Cart Notice"
+msgstr ""
+
+msgid "Cart Reward Message"
+msgstr ""
+
+msgid "Cart Width"
+msgstr ""
+
+msgid "Cart items"
+msgstr ""
+
+msgid "Cart not available."
+msgstr ""
+
+msgid "Cart on mobile devices"
+msgstr ""
+
+msgid "Cart opens after scrolling this % of page. Used when trigger is \"After Scroll\"."
+msgstr ""
+
+msgid "Cart reserved for"
+msgstr ""
+
+msgid "Cartly"
+msgstr ""
+
+msgid "Cartly Settings"
+msgstr ""
+
+msgid "Cartly Support"
+msgstr ""
+
+msgid "Cartly requires PHP 7.4 or higher. Your server is running PHP %s. The plugin has not been activated."
+msgstr ""
+
+msgid "Category Match"
+msgstr ""
+
+msgid "Checkout"
+msgstr ""
+
+msgid "Checkout Button"
+msgstr ""
+
+msgid "Checkout · $107.00"
+msgstr ""
+
+msgid "Choose Style"
+msgstr ""
+
+msgid "Close cart"
+msgstr ""
+
+msgid "Color: Black · Size: M"
+msgstr ""
+
+msgid "Compact"
+msgstr ""
+
+msgid "Compatibility"
+msgstr ""
+
+msgid "Continue Shopping"
+msgstr ""
+
+msgid "Conversion Triggers"
+msgstr ""
+
+msgid "Convert"
+msgstr ""
+
+msgid "Could not add to cart."
+msgstr ""
+
+msgid "Coupon & Trust"
+msgstr ""
+
+msgid "Coupon Field"
+msgstr ""
+
+msgid "Custom CSS"
+msgstr ""
+
+msgid "Customize Cart"
+msgstr ""
+
+msgid "Dark"
+msgstr ""
+
+msgid "Decrease quantity"
+msgstr ""
+
+msgid "Delay Trigger (seconds)"
+msgstr ""
+
+msgid "Design"
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "Desktop Only"
+msgstr ""
+
+msgid "Developed by %s · Premium WooCommerce Conversion Plugin"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "Disable All Animations"
+msgstr ""
+
+msgid "Display Conditions"
+msgstr ""
+
+msgid "Display Location"
+msgstr ""
+
+msgid "Display Options"
+msgstr ""
+
+msgid "Drawer Position"
+msgstr ""
+
+msgid "Drawer Settings"
+msgstr ""
+
+msgid "Duration (minutes)"
+msgstr ""
+
+msgid "Enable Countdown Timer"
+msgstr ""
+
+msgid "Enable Exit Intent"
+msgstr ""
+
+msgid "Enable Goal Bar"
+msgstr ""
+
+msgid "Enable Mobile Cart"
+msgstr ""
+
+msgid "Enable Notice Banner"
+msgstr ""
+
+msgid "Enable Reward Message"
+msgstr ""
+
+msgid "Enable Shipping Bar"
+msgstr ""
+
+msgid "Enable Smart Recommendations"
+msgstr ""
+
+msgid "Enable Sticky ATC Bar"
+msgstr ""
+
+msgid "Enable Sticky Bar"
+msgstr ""
+
+msgid "Enable Upsells"
+msgstr ""
+
+msgid "Enter coupon code"
+msgstr ""
+
+msgid "Exit Intent"
+msgstr ""
+
+msgid "Fade"
+msgstr ""
+
+msgid "Featured"
+msgstr ""
+
+msgid "Filled"
+msgstr ""
+
+msgid "Floating Button"
+msgstr ""
+
+msgid "Floating Cart Drawer"
+msgstr ""
+
+msgid "Font Size"
+msgstr ""
+
+msgid "Font Weight"
+msgstr ""
+
+msgid "Free Shipping"
+msgstr ""
+
+msgid "Free Shipping Bar"
+msgstr ""
+
+msgid "Free Shipping Goals"
+msgstr ""
+
+msgid "Frequently Bought Together"
+msgstr ""
+
+msgid "Full Screen"
+msgstr ""
+
+msgid "Glass"
+msgstr ""
+
+msgid "Glass (frosted)"
+msgstr ""
+
+msgid "Glow"
+msgstr ""
+
+msgid "Goal %d (%s)"
+msgstr ""
+
+msgid "Goal Amount (%s)"
+msgstr ""
+
+msgid "Gradient"
+msgstr ""
+
+msgid "HOT"
+msgstr ""
+
+msgid "Heavy"
+msgstr ""
+
+msgid "Hide On Pages (Page IDs)"
+msgstr ""
+
+msgid "Highest Price"
+msgstr ""
+
+msgid "Hover Effect"
+msgstr ""
+
+msgid "Icon"
+msgstr ""
+
+msgid "Increase quantity"
+msgstr ""
+
+msgid "Inside Cart (scrollable)"
+msgstr ""
+
+msgid "Invalid coupon code."
+msgstr ""
+
+msgid "Invalid item key."
+msgstr ""
+
+msgid "Invalid product."
+msgstr ""
+
+msgid "Label"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Layout Style"
+msgstr ""
+
+msgid "Leather Bifold Wallet"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Lift"
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "Light (300)"
+msgstr ""
+
+msgid "Live Cart Preview"
+msgstr ""
+
+msgid "Luxury"
+msgstr ""
+
+msgid "Max Products Shown"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Medium (500)"
+msgstr ""
+
+msgid "Minimal"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Mobile-First Design"
+msgstr ""
+
+msgid "Modern"
+msgstr ""
+
+msgid "Move Button to Bottom on Mobile"
+msgstr ""
+
+msgid "Multi-tier milestone progress bar"
+msgstr ""
+
+msgid "Need help? Contact codelitix through CodeCanyon."
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Notice Background"
+msgstr ""
+
+msgid "Notice Text"
+msgstr ""
+
+msgid "Off = load everywhere (default)"
+msgstr ""
+
+msgid "Open Animation"
+msgstr ""
+
+msgid "Open Cart"
+msgstr ""
+
+msgid "Open Support"
+msgstr ""
+
+msgid "Open Trigger"
+msgstr ""
+
+msgid "Opens cart on mobile when product added"
+msgstr ""
+
+msgid "Opens cart when cursor leaves window"
+msgstr ""
+
+msgid "Opens drawer the moment a product is added"
+msgstr ""
+
+msgid "Opens drawer when a product is added"
+msgstr ""
+
+msgid "Outline"
+msgstr ""
+
+msgid "Override without editing plugin files"
+msgstr ""
+
+msgid "Performance"
+msgstr ""
+
+msgid "Performance / accessibility mode"
+msgstr ""
+
+msgid "Pick your visual preset"
+msgstr ""
+
+msgid "Please enter a coupon code."
+msgstr ""
+
+msgid "Plugin Activation Error"
+msgstr ""
+
+msgid "Premium Wireless Headphones"
+msgstr ""
+
+msgid "Preset:"
+msgstr ""
+
+msgid "Price Font Size"
+msgstr ""
+
+msgid "Primary / Accent"
+msgstr ""
+
+msgid "Product pages only ⭐"
+msgstr ""
+
+msgid "Product suggestions"
+msgstr ""
+
+msgid "Progress Message"
+msgstr ""
+
+msgid "Proven to increase average order value"
+msgstr ""
+
+msgid "Quantity"
+msgstr ""
+
+msgid "Quick add to cart"
+msgstr ""
+
+msgid "Real-time updates via WC fragments"
+msgstr ""
+
+msgid "Regular (400)"
+msgstr ""
+
+msgid "Related Products"
+msgstr ""
+
+msgid "Related: auto-picked by WooCommerce"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Reset all settings to defaults? This cannot be undone."
+msgstr ""
+
+msgid "Reset!"
+msgstr ""
+
+msgid "Restrict which pages load the cart."
+msgstr ""
+
+msgid "Reward Text"
+msgstr ""
+
+msgid "Rewards"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Rounded (capsule)"
+msgstr ""
+
+msgid "Sale"
+msgstr ""
+
+msgid "Save Settings"
+msgstr ""
+
+msgid "Saved!"
+msgstr ""
+
+msgid "Scale"
+msgstr ""
+
+msgid "Scroll Trigger (%)"
+msgstr ""
+
+msgid "Secondary"
+msgstr ""
+
+msgid "Section Title"
+msgstr ""
+
+msgid "Secure checkout message at footer"
+msgstr ""
+
+msgid "Security check failed."
+msgstr ""
+
+msgid "See it on your website frontend"
+msgstr ""
+
+msgid "Select Options"
+msgstr ""
+
+msgid "Semi-Bold (600)"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Shadow Style"
+msgstr ""
+
+msgid "Shake"
+msgstr ""
+
+msgid "Shipping Bar Fill"
+msgstr ""
+
+msgid "Shop + Product Pages Only"
+msgstr ""
+
+msgid "Shopping Cart"
+msgstr ""
+
+msgid "Show Add Button"
+msgstr ""
+
+msgid "Show Discount Badge"
+msgstr ""
+
+msgid "Show Floating Cart Button"
+msgstr ""
+
+msgid "Show On Pages"
+msgstr ""
+
+msgid "Show Quantity Selector"
+msgstr ""
+
+msgid "Show Star Ratings"
+msgstr ""
+
+msgid "Show inside drawer"
+msgstr ""
+
+msgid "Shows \"3 items · $89 · View Cart\" bar"
+msgstr ""
+
+msgid "Single-goal motivational bar"
+msgstr ""
+
+msgid "Skip Setup →"
+msgstr ""
+
+msgid "Skip When Cart Empty"
+msgstr ""
+
+msgid "Slide"
+msgstr ""
+
+msgid "Smart Upsell Engine"
+msgstr ""
+
+msgid "Smart Upsells"
+msgstr ""
+
+msgid "Smooth Ease"
+msgstr ""
+
+msgid "Solid"
+msgstr ""
+
+msgid "Spend $12 more for Free Shipping 🚚"
+msgstr ""
+
+msgid "Spend {amount} more for Free Shipping 🚚"
+msgstr ""
+
+msgid "Start Shopping"
+msgstr ""
+
+msgid "Sticky Add-to-Cart Bar"
+msgstr ""
+
+msgid "Sticky Summary Bar"
+msgstr ""
+
+msgid "Strategy"
+msgstr ""
+
+msgid "Style Presets"
+msgstr ""
+
+msgid "Subtle Gradient"
+msgstr ""
+
+msgid "Subtotal"
+msgstr ""
+
+msgid "Success Message"
+msgstr ""
+
+msgid "Successfully Installed 🎉"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Swipe to Close"
+msgstr ""
+
+msgid "Swipe-down gesture closes bottom sheet"
+msgstr ""
+
+msgid "Tablet"
+msgstr ""
+
+msgid "Text Color"
+msgstr ""
+
+msgid "Thin Line"
+msgstr ""
+
+msgid "Threshold Amount (%s)"
+msgstr ""
+
+msgid "Timer Mode"
+msgstr ""
+
+msgid "Trust Badges"
+msgstr ""
+
+msgid "Typography"
+msgstr ""
+
+msgid "Unauthorized."
+msgstr ""
+
+msgid "Upsell Source"
+msgstr ""
+
+msgid "Upsells"
+msgstr ""
+
+msgid "View Cart"
+msgstr ""
+
+msgid "View Live Cart"
+msgstr ""
+
+msgid "View Live Demo"
+msgstr ""
+
+msgid "View Store"
+msgstr ""
+
+msgid "Welcome"
+msgstr ""
+
+msgid "Welcome to Cartly"
+msgstr ""
+
+msgid "Welcome to Cartly 🚀"
+msgstr ""
+
+msgid "WooCommerce Fragments Compatibility"
+msgstr ""
+
+msgid "WooCommerce Pages Only"
+msgstr ""
+
+msgid "You have unsaved changes."
+msgstr ""
+
+msgid "You might also like"
+msgstr ""
+
+msgid "Your Cart"
+msgstr ""
+
+msgid "Your cart is active on the store"
+msgstr ""
+
+msgid "Your cart is empty"
+msgstr ""
+
+msgid "requires %s to be installed and active to unlock all features. Please install and activate WooCommerce to continue."
+msgstr ""
+
+msgid "⏰ Countdown Timer"
+msgstr ""
+
+msgid "⏱ After Delay (seconds)"
+msgstr ""
+
+msgid "⚡ Discount expires in"
+msgstr ""
+
+msgid "⚡ Sticky ATC"
+msgstr ""
+
+msgid "⚡ Urgency Only – discount expires"
+msgstr ""
+
+msgid "✅ Guest Checkout"
+msgstr ""
+
+msgid "✅ HPOS / Custom Order Tables"
+msgstr ""
+
+msgid "✅ PHP 8.2+"
+msgstr ""
+
+msgid "✅ Simple & Variable Products"
+msgstr ""
+
+msgid "✅ WC 7.0+"
+msgstr ""
+
+msgid "✅ WooCommerce Blocks"
+msgstr ""
+
+msgid "✅ Works instantly after activation — no coding required."
+msgstr ""
+
+msgid "✦ Smart Upsells"
+msgstr ""
+
+msgid "⭐ 6 Presets"
+msgstr ""
+
+msgid "⭐ Smart Recommendations"
+msgstr ""
+
+msgid "⭐ Support"
+msgstr ""
+
+msgid "🏆 Reward Goals"
+msgstr ""
+
+msgid "📂 Same Category"
+msgstr ""
+
+msgid "📜 After Scroll %"
+msgstr ""
+
+msgid "📱 Mobile Sheet"
+msgstr ""
+
+msgid "🔄 Cross-sells (per product)"
+msgstr ""
+
+msgid "🔒 Secure Checkout · Free Returns · 24/7 Support"
+msgstr ""
+
+msgid "🔗 Related Products (automatic)"
+msgstr ""
+
+msgid "🔥 Free Shipping Bar"
+msgstr ""
+
+msgid "🖱 Manual Only"
+msgstr ""
+
+msgid "🚚 Free Shipping Offer Ends"
+msgstr ""
+
+msgid "🚚 Free shipping ends in"
+msgstr ""
+
+msgid "🛒 Auto-open on Add to Cart"
+msgstr ""
+
+msgid "🛒 Reserve Cart – holds for X minutes"
+msgstr ""
+

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cartly – Documentation</title>
+<style>
+  :root{ --p:#6c63ff; --dark:#111827; --muted:#6b7280; --bg:#f9fafb; --border:#e5e7eb; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; font-size:15px; line-height:1.7; color:var(--dark); background:#fff; }
+  .wrap{ display:flex; min-height:100vh; }
+  nav{ width:260px; background:var(--dark); color:#fff; flex-shrink:0; padding:0; position:sticky; top:0; height:100vh; overflow-y:auto; }
+  nav .logo{ padding:24px 24px 16px; border-bottom:1px solid rgba(255,255,255,.1); }
+  nav .logo span{ font-size:20px; font-weight:800; color:#fff; }
+  nav .logo small{ display:block; color:rgba(255,255,255,.5); font-size:12px; margin-top:2px; }
+  nav ul{ list-style:none; padding:12px 0; }
+  nav ul li a{ display:block; padding:9px 24px; color:rgba(255,255,255,.7); text-decoration:none; font-size:13.5px; transition:all .15s; }
+  nav ul li a:hover, nav ul li a.active{ color:#fff; background:rgba(108,99,255,.3); border-right:2px solid var(--p); }
+  nav ul li.section-head{ padding:16px 24px 6px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:rgba(255,255,255,.4); }
+  main{ flex:1; padding:48px 56px; max-width:860px; }
+  h1{ font-size:32px; font-weight:800; margin-bottom:8px; }
+  h2{ font-size:22px; font-weight:700; margin:40px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--border); }
+  h3{ font-size:17px; font-weight:700; margin:24px 0 8px; color:var(--p); }
+  p{ margin:8px 0 16px; color:#374151; }
+  ul,ol{ padding-left:24px; margin:8px 0 16px; }
+  li{ margin:4px 0; }
+  code{ background:#f3f4f6; padding:2px 7px; border-radius:5px; font-size:13px; color:#e91e63; font-family:monospace; }
+  pre{ background:#1e293b; color:#e2e8f0; padding:20px 24px; border-radius:10px; overflow-x:auto; font-size:13px; line-height:1.6; margin:12px 0 20px; }
+  .badge{ display:inline-block; padding:2px 10px; border-radius:99px; font-size:12px; font-weight:700; }
+  .badge-green{ background:#d1fae5; color:#065f46; }
+  .badge-purple{ background:#ede9fe; color:#5b21b6; }
+  .badge-amber{ background:#fef3c7; color:#92400e; }
+  .callout{ padding:16px 20px; border-radius:10px; margin:16px 0; border-left:4px solid; }
+  .callout-info{ background:#eff6ff; border-color:#3b82f6; color:#1e40af; }
+  .callout-warn{ background:#fffbeb; border-color:#f59e0b; color:#92400e; }
+  .callout-success{ background:#f0fdf4; border-color:#10b981; color:#065f46; }
+  table{ width:100%; border-collapse:collapse; margin:16px 0; font-size:14px; }
+  th{ background:#f3f4f6; padding:10px 14px; text-align:left; font-weight:700; border:1px solid var(--border); }
+  td{ padding:10px 14px; border:1px solid var(--border); vertical-align:top; }
+  tr:nth-child(even) td{ background:#fafafa; }
+  .step{ display:flex; gap:16px; align-items:flex-start; margin:16px 0; }
+  .step__num{ width:32px; height:32px; border-radius:50%; background:var(--p); color:#fff; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .step__body{ flex:1; }
+  .step__body strong{ display:block; margin-bottom:4px; }
+  @media(max-width:700px){ main{ padding:24px; } nav{ display:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- Sidebar Navigation -->
+<nav>
+  <div class="logo">
+    <span>🛒 Cartly</span>
+    <small>Smart Conversion Cart · v1.0.0</small>
+  </div>
+  <ul>
+    <li class="section-head">Getting Started</li>
+    <li><a href="#install" class="active">Installation</a></li>
+    <li><a href="#quickstart">Quick Start (2 min)</a></li>
+    <li><a href="#first-look">First Look</a></li>
+    <li class="section-head">Features</li>
+    <li><a href="#cart-drawer">Cart Drawer</a></li>
+    <li><a href="#sticky-atc">Sticky ATC Bar ⭐</a></li>
+    <li><a href="#upsells">Smart Upsells</a></li>
+    <li><a href="#goals">Cart Goals</a></li>
+    <li><a href="#triggers">Smart Triggers</a></li>
+    <li><a href="#design">Design & Presets</a></li>
+    <li class="section-head">Reference</li>
+    <li><a href="#hooks">Hooks &amp; Filters</a></li>
+    <li><a href="#compatibility">Compatibility</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#changelog">Changelog</a></li>
+    <li><a href="#support">Support</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+<!-- ── INSTALLATION ──────────────────────────────────────────────── -->
+<section id="install">
+<h1>Cartly Documentation</h1>
+<p>Welcome to <strong>Cartly – Smart Conversion Cart for WooCommerce</strong>. This guide covers installation, all features, and troubleshooting.</p>
+
+<div class="callout callout-success">
+  ✅ <strong>Zero configuration needed.</strong> Cartly works automatically. After activation, visit any product page — the cart is already live. No shortcodes or template edits required.
+</div>
+
+<h2>Installation</h2>
+
+<h3>Method 1 — WordPress Dashboard (Recommended)</h3>
+<div class="step"><div class="step__num">1</div><div class="step__body"><strong>Upload the ZIP</strong> Go to WordPress Admin → Plugins → Add New → Upload Plugin. Select <code>cartly.zip</code> and click Install Now.</div></div>
+<div class="step"><div class="step__num">2</div><div class="step__body"><strong>Activate</strong> Click Activate Plugin. You will be redirected to the Cartly <strong>Welcome screen</strong> automatically. From there you can go directly to settings or view your live store.</div></div>
+<div class="step"><div class="step__num">3</div><div class="step__body"><strong>Done!</strong> The cart is now live on your store. Visit any product page to see it.</div></div>
+
+<h3>Method 2 — FTP / cPanel</h3>
+<ol>
+  <li>Unzip <code>cartly.zip</code> on your computer</li>
+  <li>Upload the <code>cartly/</code> folder to <code>/wp-content/plugins/</code></li>
+  <li>Go to WordPress Admin → Plugins → Find "Cartly" → Activate</li>
+</ol>
+
+<h3>Requirements</h3>
+<table>
+  <tr><th>Requirement</th><th>Minimum</th><th>Recommended</th></tr>
+  <tr><td>WordPress</td><td>6.0</td><td>Latest</td></tr>
+  <tr><td>WooCommerce</td><td>7.0</td><td>Latest</td></tr>
+  <tr><td>PHP</td><td>7.4</td><td>8.1+</td></tr>
+  <tr><td>MySQL</td><td>5.6</td><td>8.0</td></tr>
+</table>
+</section>
+
+<!-- ── QUICK START ────────────────────────────────────────────────── -->
+<section id="quickstart">
+<h2>Quick Start (2 Minutes)</h2>
+<p>These 4 steps are all you need to go from installed to conversion-optimized:</p>
+
+<div class="step"><div class="step__num">1</div><div class="step__body"><strong>Choose a Style Preset</strong> Go to Cartly → Settings → left panel. Click one of the 6 presets (Modern, Minimal, Dark, Glass, Gold/Luxury, Convert). Colors update instantly.</div></div>
+<div class="step"><div class="step__num">2</div><div class="step__body"><strong>Set Free Shipping Threshold</strong> Cart Drawer tab → Free Shipping Bar → set the amount to match your WooCommerce free shipping rule (e.g. $50).</div></div>
+<div class="step"><div class="step__num">3</div><div class="step__body"><strong>Enable Upsells</strong> Upsells tab → toggle ON → set strategy to "Related Products". Products appear automatically.</div></div>
+<div class="step"><div class="step__num">4</div><div class="step__body"><strong>Save & Preview</strong> Click Save Settings → click Preview (top right) → add a product to cart.</div></div>
+
+<div class="callout callout-info">
+  💡 <strong>Tip:</strong> The Sticky Add-to-Cart Bar is enabled by default. You can configure it under the <strong>Behavior tab</strong>. Visit any product page and scroll down to see it appear.
+</div>
+</section>
+
+<!-- ── FIRST LOOK ─────────────────────────────────────────────────── -->
+<section id="first-look">
+<h2>First Look at the Admin Panel</h2>
+<p>After activation you land on the <strong>Welcome screen</strong>, which gives you two quick-action buttons: <em>Customize Cart</em> (goes to Settings) and <em>View Live Demo</em> (opens your live store in a new tab). The cart is already active at this point — no further steps required.</p>
+<p>The Cartly settings panel is organized into <strong>7 tabs</strong> on the left, with a live device preview on the right:</p>
+<table>
+  <tr><th>Tab</th><th>What it controls</th></tr>
+  <tr><td>🛒 Cart</td><td>Drawer position, open animation, free shipping bar, coupon field, trust badges, cart notice banner</td></tr>
+  <tr><td>🎨 Design</td><td>Color palette, background style, drawer width, border radius, shadow, typography, checkout button style</td></tr>
+  <tr><td>🎯 Upsells</td><td>Smart product suggestions inside the cart — source strategy, layout, badges, ratings, section title</td></tr>
+  <tr><td>🏆 Rewards</td><td>Multi-tier cart goal bar (up to 3 milestones) and countdown urgency timer</td></tr>
+  <tr><td>⚡ Behavior</td><td>Auto-open trigger, scroll %, delay, exit intent, and the Sticky Add-to-Cart bar settings</td></tr>
+  <tr><td>📱 Mobile</td><td>Bottom sheet layout, swipe-to-close, mobile auto-open, floating button position, sticky summary bar</td></tr>
+  <tr><td>⚙️ Advanced</td><td>Page load conditions, hide on specific pages, WooCommerce Blocks compatibility, custom CSS</td></tr>
+</table>
+<p>The <strong>Master Enable toggle</strong> at the very top of the page turns the entire cart on or off without deleting any settings. The current preset name is shown in the topbar badge next to the toggle.</p>
+</section>
+
+<!-- ── CART DRAWER ────────────────────────────────────────────────── -->
+<section id="cart-drawer">
+<h2>Cart Drawer</h2>
+<p>The cart drawer slides in from the right (or left) when a customer adds a product, clicks the floating button, or a trigger fires. It works automatically on all pages — no template edits needed.</p>
+
+<h3>Floating Button</h3>
+<p>The floating cart button is always visible in the corner. It shows a live item count badge that updates without page reload. On mobile, it can be positioned higher to avoid overlapping theme navigation bars.</p>
+
+<h3>Free Shipping Bar</h3>
+<p>Shows customers exactly how much more they need to spend to unlock free shipping. Set the threshold to match your WooCommerce → Shipping → Free Shipping setting. The bar turns green and shows a success message when the goal is reached.</p>
+
+<h3>Mobile Bottom Sheet</h3>
+<p>On screens under 600px wide, the drawer automatically transforms into a bottom sheet that slides up from the bottom — matching the UX of native mobile apps. No configuration needed. Customers can swipe down to close it.</p>
+</section>
+
+<!-- ── STICKY ATC ─────────────────────────────────────────────────── -->
+<section id="sticky-atc">
+<h2>Sticky Add-to-Cart Bar <span class="badge badge-purple">Unique Feature</span></h2>
+<p>This is Cartly's headline feature — no other WooCommerce cart drawer plugin includes this.</p>
+<p>On <strong>product pages only</strong>, a sticky bar appears at the bottom of the screen as soon as the native WooCommerce Add to Cart button scrolls above the viewport. It shows:</p>
+<ul>
+  <li>Product thumbnail</li>
+  <li>Product name and price</li>
+  <li>Quantity selector (optional)</li>
+  <li>Add to Cart button</li>
+</ul>
+<p>Clicking the button adds the product to cart and immediately opens the Cartly drawer. <strong>Variable products</strong> show a "Select Options" button that smoothly scrolls back to the native form.</p>
+
+<div class="callout callout-info">
+  💡 <strong>How it detects scroll position:</strong> It watches the native WooCommerce <code>form.cart</code> element. When that element's bottom edge scrolls 60px above the viewport, the bar appears. This works with all standard WooCommerce themes. Configure it under <strong>Cartly → Behavior tab → Sticky Add-to-Cart Bar</strong>.
+</div>
+</section>
+
+<!-- ── UPSELLS ────────────────────────────────────────────────────── -->
+<section id="upsells">
+<h2>Smart Upsell Engine</h2>
+<p>Upsells appear inside the cart as horizontally scrollable product cards. Customers can add them with one tap — no page navigation.</p>
+
+<h3>Strategies</h3>
+<table>
+  <tr><th>Strategy</th><th>How it works</th><th>Best for</th></tr>
+  <tr><td>Related Products</td><td>WooCommerce auto-selects based on tags and categories</td><td>Most stores — zero config needed</td></tr>
+  <tr><td>Cross-sells</td><td>Products you manually set on each product's edit page</td><td>Curated bundles</td></tr>
+  <tr><td>Same Category</td><td>Other products from the same category as cart items</td><td>Category-focused stores</td></tr>
+</table>
+
+<h3>Rule-Based Upsells</h3>
+<p>When enabled, specific products appear when the cart total reaches your minimum. Example: "Cart &gt; $50 → show premium accessory pack." This overrides the standard strategy above.</p>
+<p>Enter product IDs separated by commas. To find a product ID: go to WooCommerce → Products, hover a product — the ID appears in the URL at the bottom of your browser.</p>
+
+<h3>Frequently Bought Together</h3>
+<p>Changes the upsell section title and uses your products' cross-sell items as suggestions, mimicking the Amazon "Frequently Bought Together" pattern.</p>
+</section>
+
+<!-- ── GOALS ──────────────────────────────────────────────────────── -->
+<section id="goals">
+<h2>Cart Goals &amp; Rewards System</h2>
+
+<h3>Multi-Tier Goals Bar</h3>
+<p>Shows a visual progress track with 3 milestone icons. Icons are greyed out until each amount is reached, then animate into color. A message below tells customers how much more they need for the next reward.</p>
+<p>Example setup:</p>
+<ul>
+  <li>Goal 1: $50 → 🚚 Free Shipping</li>
+  <li>Goal 2: $80 → 🎁 Free Gift</li>
+  <li>Goal 3: $120 → 💎 10% Discount</li>
+</ul>
+<div class="callout callout-warn">
+  ⚠️ <strong>Important:</strong> The goals bar only displays the milestones visually. You must set up the actual discounts/shipping rules separately in WooCommerce.
+</div>
+
+<h3>Countdown Timer (3 Modes)</h3>
+<table>
+  <tr><th>Mode</th><th>Shows as</th><th>Use case</th></tr>
+  <tr><td>Cart Reserved</td><td>Red — "Cart reserved for 10:00"</td><td>Creates urgency on popular items</td></tr>
+  <tr><td>Discount Expires</td><td>Amber — "⚡ Discount expires in 09:45"</td><td>Flash sale psychology</td></tr>
+  <tr><td>Free Shipping Ends</td><td>Green — "🚚 Free shipping offer ends in 08:30"</td><td>Shipping incentive urgency</td></tr>
+</table>
+<p>The timer starts each time the cart drawer is opened and resets on page reload.</p>
+</section>
+
+<!-- ── TRIGGERS ───────────────────────────────────────────────────── -->
+<section id="triggers">
+<h2>Smart Triggers</h2>
+<table>
+  <tr><th>Trigger</th><th>Behaviour</th><th>Recommendation</th></tr>
+  <tr><td>Auto-open on Add to Cart</td><td>Cart opens the moment Add to Cart is clicked</td><td>✅ Best for conversion</td></tr>
+  <tr><td>After Scroll %</td><td>Opens after customer scrolls past X% of page</td><td>Good for blog/editorial stores</td></tr>
+  <tr><td>After Delay</td><td>Opens X seconds after page load</td><td>Use sparingly — can be annoying</td></tr>
+  <tr><td>Manual Only</td><td>Only when the floating button is clicked</td><td>Most respectful, lowest friction</td></tr>
+</table>
+
+<h3>Exit Intent</h3>
+<p>Detects when the mouse cursor leaves the browser viewport toward the address bar — a reliable signal that the user is about to leave. The floating cart button pulses, then the cart opens after a brief delay.</p>
+<p><span class="badge badge-amber">Desktop Only</span> Mobile devices have no cursor, so exit intent has no effect on phones/tablets.</p>
+</section>
+
+<!-- ── DESIGN ─────────────────────────────────────────────────────── -->
+<section id="design">
+<h2>Design &amp; Presets</h2>
+<p>Cartly includes 6 fully designed style presets. Clicking a preset instantly updates all colors in the color pickers — you can then fine-tune any individual color.</p>
+<table>
+  <tr><th>Preset</th><th>Theme</th><th>Best for</th></tr>
+  <tr><td>Modern</td><td>Purple gradient</td><td>Tech, SaaS, general stores</td></tr>
+  <tr><td>Minimal</td><td>Onyx / Pure black</td><td>Fashion, premium, editorial</td></tr>
+  <tr><td>Dark</td><td>Midnight navy + indigo</td><td>Gaming, electronics, dark-theme sites</td></tr>
+  <tr><td>Glass</td><td>Aurora purple translucent</td><td>Luxury, creative agencies</td></tr>
+  <tr><td>Gold / Luxury</td><td>Gold on dark brown</td><td>Jewellery, premium goods</td></tr>
+  <tr><td>Convert</td><td>Emerald teal gradient</td><td>High-conversion stores, health, eco brands</td></tr>
+</table>
+</section>
+
+<!-- ── HOOKS & FILTERS ────────────────────────────────────────────── -->
+<section id="hooks">
+<h2>Hooks &amp; Filters</h2>
+<p>Cartly is built entirely on standard WordPress and WooCommerce hooks. Every action hook used internally is listed below, along with all registered AJAX actions.</p>
+
+<h3>WordPress Action Hooks Used</h3>
+<table>
+  <tr><th>Hook</th><th>Priority</th><th>Description</th></tr>
+  <tr><td><code>plugins_loaded</code></td><td>20</td><td>Bootstraps the plugin. Aborts gracefully if WooCommerce is not active.</td></tr>
+  <tr><td><code>before_woocommerce_init</code></td><td>default</td><td>Declares HPOS and Cart/Checkout Blocks compatibility.</td></tr>
+  <tr><td><code>wp_enqueue_scripts</code></td><td>default</td><td>Enqueues front-end CSS &amp; JS. Uses minified files in production; full files when <code>SCRIPT_DEBUG</code> is on.</td></tr>
+  <tr><td><code>wp_footer</code></td><td>1</td><td>Renders the cart drawer HTML and the floating cart button.</td></tr>
+  <tr><td><code>wp_footer</code></td><td>98</td><td>Renders the Sticky Add-to-Cart bar on single product pages only.</td></tr>
+  <tr><td><code>admin_menu</code></td><td>default</td><td>Registers the Cartly admin menu and sub-pages.</td></tr>
+  <tr><td><code>admin_enqueue_scripts</code></td><td>default</td><td>Enqueues admin CSS/JS on Cartly admin pages only.</td></tr>
+  <tr><td><code>admin_init</code></td><td>default</td><td>Handles post-activation redirect to the welcome screen.</td></tr>
+</table>
+
+<h3>AJAX Actions</h3>
+<p>All endpoints are registered for both logged-in users (<code>wp_ajax_</code>) and guests (<code>wp_ajax_nopriv_</code>). Every request requires a valid <code>cartly_nonce</code> nonce.</p>
+<table>
+  <tr><th>Action</th><th>POST Parameters</th><th>Description</th></tr>
+  <tr><td><code>cartly_get_cart</code></td><td>—</td><td>Returns full cart contents as JSON.</td></tr>
+  <tr><td><code>cartly_add_to_cart</code></td><td><code>product_id</code>, <code>qty</code>, <code>variation_id</code></td><td>Adds a product to the cart.</td></tr>
+  <tr><td><code>cartly_update_cart</code></td><td><code>key</code>, <code>qty</code></td><td>Updates item quantity. <code>qty=0</code> removes the item.</td></tr>
+  <tr><td><code>cartly_remove_item</code></td><td><code>key</code></td><td>Removes a cart item by its key.</td></tr>
+  <tr><td><code>cartly_apply_coupon</code></td><td><code>coupon</code></td><td>Applies a coupon code to the cart.</td></tr>
+  <tr><td><code>cartly_remove_coupon</code></td><td><code>coupon</code></td><td>Removes an applied coupon from the cart.</td></tr>
+  <tr><td><code>cartly_get_upsells</code></td><td>—</td><td>Returns upsell product data for the current cart.</td></tr>
+</table>
+<div class="callout callout-warn">
+  <strong>Developer Note:</strong> Cartly does not currently expose <code>apply_filters()</code> hooks for modifying rendered output. Use the standard WooCommerce and WordPress hooks above to extend behaviour, or open a support ticket to request a specific filter.
+</div>
+</section>
+
+<!-- ── COMPATIBILITY ──────────────────────────────────────────────── -->
+<section id="compatibility">
+<h2>Compatibility</h2>
+<table>
+  <tr><th>Feature</th><th>Status</th></tr>
+  <tr><td>WordPress 6.0+</td><td>✅ Fully compatible</td></tr>
+  <tr><td>WooCommerce 7.0+</td><td>✅ Fully compatible</td></tr>
+  <tr><td>HPOS / Custom Order Tables</td><td>✅ Declared compatible</td></tr>
+  <tr><td>WooCommerce Blocks (Cart &amp; Checkout)</td><td>✅ Excluded from block pages automatically</td></tr>
+  <tr><td>Storefront Theme</td><td>✅ Tested and confirmed</td></tr>
+  <tr><td>Astra / GeneratePress / Flatsome</td><td>✅ No known conflicts</td></tr>
+  <tr><td>WooCommerce Subscriptions</td><td>✅ Cart works, subscription management on My Account</td></tr>
+  <tr><td>Multi-currency plugins</td><td>⚠️ Prices shown in WooCommerce default currency</td></tr>
+  <tr><td>RTL Languages</td><td>⚠️ Basic support, visual refinement planned for v1.2</td></tr>
+  <tr><td>PHP 8.2+</td><td>✅ No deprecation warnings</td></tr>
+</table>
+</section>
+
+<!-- ── FAQ ───────────────────────────────────────────────────────── -->
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+
+<h3>The cart doesn't appear on my site. What's wrong?</h3>
+<p>Check: (1) WooCommerce is installed and active. (2) The master enable toggle at the top of Cartly settings is ON. (3) You are not on the checkout page (Cartly is intentionally excluded there). See also <a href="#troubleshooting">Troubleshooting</a>.</p>
+
+<h3>Do I need to edit any theme templates?</h3>
+<p>No. Cartly works entirely through standard WordPress hooks. The cart renders in the <code>wp_footer</code> action — no template edits needed.</p>
+
+<h3>The sticky add-to-cart bar doesn't appear.</h3>
+<p>The bar only appears on <strong>single product pages</strong> (WooCommerce <code>is_product()</code>). Scroll down on a product page until the Add to Cart button is above the screen — the bar slides up then.</p>
+
+<h3>Can I use Cartly on non-WooCommerce pages?</h3>
+<p>Yes. By default, Cartly loads on all pages. Enable "Load Only on WooCommerce Pages" in the Advanced tab if you want to restrict it.</p>
+
+<h3>Will Cartly conflict with my checkout plugin?</h3>
+<p>Cartly is excluded from <code>is_checkout()</code> pages automatically. It should not conflict with checkout plugins.</p>
+
+<h3>How do I set up the free shipping bar?</h3>
+<p>Set the threshold in Cartly → Cart Drawer → Free Shipping Threshold. This <em>must match</em> the minimum order value in WooCommerce → Shipping → Shipping Zones → Free Shipping method.</p>
+
+<h3>Can customers apply coupons inside the cart?</h3>
+<p>Yes. Enable Coupon Field in the Cart Drawer tab. The field appears in the cart footer and supports all WooCommerce coupon types.</p>
+</section>
+
+<!-- ── TROUBLESHOOTING ────────────────────────────────────────────── -->
+<section id="troubleshooting">
+<h2>Troubleshooting</h2>
+
+<h3>Cart loads but updating quantity doesn't work</h3>
+<ol>
+  <li>Check browser console for JavaScript errors</li>
+  <li>Disable other cart plugins temporarily (conflicts can happen with multiple cart plugins)</li>
+  <li>Ensure WooCommerce cart fragments script is loading (<code>wc-cart-fragments</code>)</li>
+</ol>
+
+<h3>Style presets don't apply colors to the frontend</h3>
+<ol>
+  <li>Click Save Settings after selecting a preset</li>
+  <li>Clear your site cache (if using WP Rocket, W3 Total Cache, etc.)</li>
+  <li>Check that your theme is not overriding the CSS custom properties with <code>!important</code></li>
+</ol>
+
+<h3>Admin settings save but nothing changes on frontend</h3>
+<ol>
+  <li>Clear browser cache (Ctrl+Shift+R)</li>
+  <li>Clear server-side cache (caching plugin, CDN, or hosting cache)</li>
+  <li>Check the inline <code>&lt;style&gt;</code> tag in your page source — it should contain <code>--cly-pri</code> variables</li>
+</ol>
+
+<h3>Getting a PHP error after activation</h3>
+<ol>
+  <li>Ensure WooCommerce is installed and active <em>before</em> activating Cartly</li>
+  <li>Check PHP version meets the 7.4 minimum requirement</li>
+  <li>Enable <code>WP_DEBUG</code> and check the debug log at <code>wp-content/debug.log</code></li>
+</ol>
+
+<h3>Sticky ATC bar not visible on product pages</h3>
+<ol>
+  <li>Confirm Sticky ATC is enabled in <strong>Cartly → Behavior tab → Sticky Add-to-Cart Bar section</strong></li>
+  <li>The bar only appears when you <em>scroll down</em> past the native Add to Cart button</li>
+  <li>Some page builders rename the form class from <code>form.cart</code> — contact support if this applies</li>
+</ol>
+</section>
+
+<!-- ── CHANGELOG ─────────────────────────────────────────────────── -->
+<section id="changelog">
+<h2>Changelog</h2>
+
+<h3>v1.0.0 — Initial Release</h3>
+<ul>
+  <li>✨ AJAX-powered floating side cart drawer</li>
+  <li>✨ Sticky Add-to-Cart bar on product pages</li>
+  <li>✨ Smart upsell engine (related, cross-sell, category, rule-based, frequently bought together)</li>
+  <li>✨ Free shipping progress bar with animated success state</li>
+  <li>✨ Multi-tier cart goals — up to 3 milestones with animated progress track</li>
+  <li>✨ Countdown urgency timer — 3 modes (cart reserved, discount expires, free shipping ends)</li>
+  <li>✨ Behavior triggers: auto-open, scroll %, delay, exit intent</li>
+  <li>✨ Mobile bottom sheet layout with swipe-to-close gesture</li>
+  <li>✨ Coupons inside the cart — apply and remove without leaving</li>
+  <li>✨ Trust badge footer and announcement banner</li>
+  <li>✨ Visual live builder with 6 style presets</li>
+  <li>✨ Full color, typography, shadow, and layout controls</li>
+  <li>✨ Custom CSS field</li>
+  <li>✨ Welcome screen after activation</li>
+  <li>✨ WooCommerce HPOS and Blocks compatibility declared</li>
+  <li>🔒 Nonce verification and capability checks on all AJAX and admin endpoints</li>
+  <li>⚡ Minified CSS and JS with SCRIPT_DEBUG support</li>
+</ul>
+</section>
+
+<!-- ── SUPPORT ─────────────────────────────────────────────────── -->
+<section id="support">
+<h2>Support</h2>
+<p>We are committed to helping you get the most out of Cartly. If you run into any issues or have questions, here is how to reach us.</p>
+
+<h3>How to Get Help</h3>
+<ol>
+  <li><strong>Check this documentation</strong> — most common questions are answered in the <a href="#faq">FAQ</a> and <a href="#troubleshooting">Troubleshooting</a> sections above.</li>
+  <li><strong>Open a support ticket</strong> — visit your CodeCanyon purchase page and click <em>Support</em> to submit a ticket directly to the author.</li>
+  <li><strong>Include details</strong> — when submitting a ticket, please include your WordPress version, WooCommerce version, active theme name, and a description of the issue (or a screenshot if possible). This helps us respond faster.</li>
+</ol>
+
+<h3>Response Times</h3>
+<p>We respond to support tickets within <strong>24–48 business hours</strong>. Tickets submitted over weekends or public holidays will be answered on the next business day.</p>
+
+<h3>Before You Contact Support</h3>
+<ul>
+  <li>Ensure you are running WordPress 6.0+ and WooCommerce 7.0+.</li>
+  <li>Temporarily switch to a default theme (Storefront or Twenty Twenty-Four) to rule out theme conflicts.</li>
+  <li>Deactivate other plugins one by one to check for plugin conflicts.</li>
+  <li>Clear your browser cache and any server-side caching after making changes.</li>
+</ul>
+
+<div class="callout callout-info">
+  <strong>📌 Note:</strong> Support is provided for the plugin as distributed. Customisation requests, feature development, and issues caused by third-party code modifications are outside the scope of standard support.
+</div>
+
+<h3>Feature Requests</h3>
+<p>We love hearing ideas from our users. You can submit feature requests through your CodeCanyon support ticket or leave a comment on the item page. Popular requests are prioritised in future releases.</p>
+
+<a href="https://codecanyon.net/user/codelitix" target="_blank" style="display:inline-block;margin-top:12px;padding:10px 22px;background:#6c63ff;color:#fff;border-radius:8px;text-decoration:none;font-weight:700;">Open Support Ticket →</a>
+</section>
+
+</main>
+</div>
+
+<script>
+// Active link highlighting
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('nav a');
+  links.forEach(function(link) {
+    link.addEventListener('click', function() {
+      links.forEach(function(l){ l.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+});
+</script>
+</body>
+</html>

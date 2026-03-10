@@ -1,0 +1,114 @@
+Cartly – Third-Party Licenses
+==============================
+
+All third-party components used in this plugin are listed below with their
+respective licenses. All licenses are compatible with GPL-2.0-or-later.
+
+------------------------------------------------------------------------------
+1. Feather Icons
+------------------------------------------------------------------------------
+License  : MIT License
+Author   : Cole Bemis
+Source   : https://github.com/feathericons/feather
+Version  : 4.x
+
+Used in  : Admin panel SVG icons (cart, settings, sliders, device switcher,
+           save, reset, external link)
+           Cart drawer SVG icons (cart, close, arrow, chevron)
+           Sticky Add-to-Cart bar SVG icons
+           Welcome screen SVG icons
+
+Icons are embedded inline as SVG path data. No icon font, external stylesheet,
+or JavaScript library is loaded. Only the SVG path data is used.
+
+MIT License
+Copyright (c) 2013-2023 Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+------------------------------------------------------------------------------
+2. jQuery
+------------------------------------------------------------------------------
+License  : MIT License
+Author   : OpenJS Foundation and jQuery contributors
+Source   : https://jquery.com
+
+Used in  : assets/js/cartly.js, admin/js/admin.js, admin/js/welcome.js
+
+jQuery is bundled with and served by WordPress core. It is NOT redistributed
+separately within this plugin. Cartly registers its dependency on jQuery
+through the standard WordPress wp_enqueue_script( 'jquery' ) API, so
+WordPress provides the correct version automatically.
+
+------------------------------------------------------------------------------
+3. wp-color-picker (Iris Color Picker)
+------------------------------------------------------------------------------
+License  : GPL-2.0-or-later
+Author   : WordPress Core Contributors / Automattic
+Source   : https://core.trac.wordpress.org/browser/trunk/src/wp-includes/js/color-picker.js
+
+Used in  : Admin panel → Design tab color input fields
+
+wp-color-picker is bundled with WordPress core and is NOT redistributed
+within this plugin. It is enqueued via the standard WordPress APIs:
+wp_enqueue_style( 'wp-color-picker' ) and wp_enqueue_script( 'wp-color-picker' ).
+
+------------------------------------------------------------------------------
+4. WooCommerce Public API
+------------------------------------------------------------------------------
+License  : GPL-3.0-or-later
+Author   : Automattic / WooCommerce contributors
+Source   : https://woocommerce.com
+
+Cartly integrates with WooCommerce exclusively through its documented public
+hook, filter, and function API. Functions used include: WC(), WC()->cart,
+wc_get_related_products(), wc_get_products(), wc_get_checkout_url(),
+wc_get_cart_url(), wc_price(), wc_placeholder_img_src(), and standard
+WooCommerce conditional tags (is_woocommerce(), is_product(), is_cart(),
+is_checkout()).
+
+No WooCommerce source code is copied, modified, or redistributed within
+this plugin.
+
+------------------------------------------------------------------------------
+5. WordPress Core APIs
+------------------------------------------------------------------------------
+License  : GPL-2.0-or-later
+Source   : https://wordpress.org
+
+Cartly is a standard WordPress plugin and uses only the public WordPress
+plugin API, including: wp_ajax_*, wp_create_nonce(), check_ajax_referer(),
+sanitize_*(), esc_*(), wp_kses_post(), wp_enqueue_script(),
+wp_enqueue_style(), wp_localize_script(), add_action(), add_filter(),
+register_activation_hook(), update_option(), get_option(),
+delete_option(), delete_transient(), and wp_safe_redirect().
+
+No WordPress core files are modified or redistributed.
+
+------------------------------------------------------------------------------
+
+All other code in this plugin — including all PHP classes, JavaScript,
+CSS, HTML templates, and admin panel code — is original work by Codelitix
+and is licensed under GPL-2.0-or-later.
+
+Plugin URI : https://codecanyon.net/user/codelitix
+License    : GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+© Codelitix — https://codecanyon.net/user/codelitix
