@@ -6,7 +6,7 @@
  * correct frontend CSS variables.
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

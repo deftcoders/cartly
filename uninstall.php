@@ -10,7 +10,7 @@
  *   - cartly_activated (post-activation redirect transient)
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  */
 
 // Only run when WordPress triggers an uninstall.

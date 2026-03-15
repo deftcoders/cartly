@@ -1,8 +1,8 @@
-=== Cartly – Conversion Focused WooCommerce Side Cart, Sticky Add to Cart & Upsells ===
-Contributors: codelitix
-Tags: woocommerce, cart, floating cart, cart drawer, side cart, ajax cart, upsells, free shipping bar, sticky cart
+=== DeftCoders – Cartly Ajax Side Cart for WooCommerce ===
+Contributors: deftcoders
+Tags: woocommerce cart, ajax cart, side cart, mini cart, cart drawer
 Requires at least: 6.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
 WC requires at least: 7.0
 WC tested up to: 9.6
@@ -10,15 +10,22 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Boost WooCommerce conversions with a modern AJAX side cart drawer, floating cart, sticky add to cart bar, smart upsells, free shipping progress, and behavior-based triggers — all customizable with a live visual builder.
+A modern AJAX side cart drawer for WooCommerce with upsells, free shipping progress, sticky add to cart, and behavior-based triggers.
 
 == Description ==
 
-**Cartly** is a premium WooCommerce cart plugin built to increase conversions, reduce cart abandonment, and deliver a polished shopping experience — with zero configuration required after activation.
+DeftCoders – Ajax Side Cart for WooCommerce adds a modern sliding cart drawer to your WooCommerce store.
 
-The cart drawer activates **immediately after installation**. Visit any product page, click Add to Cart, and watch it work.
+Customers can view and edit their cart instantly without reloading the page, improving checkout flow and conversion rates. The cart drawer activates immediately after activation — no configuration required.
 
-= 🛒 AJAX Side Cart Drawer =
+Perfect for:
+
+* WooCommerce stores looking for a better cart experience
+* Modern cart drawer UX
+* Mobile shopping
+* Faster checkout flow
+
+= AJAX Side Cart Drawer =
 
 * Opens instantly when a product is added to cart — no page reload
 * Quantity controls with live subtotal update
@@ -28,7 +35,7 @@ The cart drawer activates **immediately after installation**. Visit any product 
 * Live cart item count badge on the floating button
 * Swipe to close on mobile
 
-= ⭐ Sticky Add-to-Cart Bar =
+= Sticky Add-to-Cart Bar =
 
 * Appears on single product pages when the native Add to Cart button scrolls above the viewport
 * Shows product thumbnail, name, price, optional quantity selector, and Add to Cart button
@@ -36,133 +43,107 @@ The cart drawer activates **immediately after installation**. Visit any product 
 * Variable products display a "Select Options" link that scrolls to the native form
 * Fully configurable — enable/disable, custom button text, show/hide quantity
 
-= 🚀 Behavior & Open Triggers =
+= Smart Upsell Engine =
+
+* Related product suggestions powered automatically by WooCommerce
+* Cross-sell products configured per product in WooCommerce
+* Same-category recommendations
+* Frequently Bought Together mode
+* One-click add to cart directly from inside the drawer
+* Optional sale/featured badges and star ratings
+* Configurable section title and card/row layouts
+
+= Multi-Tier Cart Goals =
+
+* Up to 3 milestone goals on a visual progress track
+* Animated icon unlocks when each amount is reached
+* Progress message updates dynamically as items are added
+* Example: $50 → Free Shipping · $100 → Free Gift · $150 → 10% Off
+
+= Free Shipping Progress Bar =
+
+* Fills as the customer adds items toward the threshold
+* Customizable messages with {amount} placeholder support
+* Animated success state when goal is reached
+
+= Behavior and Open Triggers =
 
 * Auto-open on Add to Cart — recommended for highest conversion
 * Scroll trigger — opens after the customer scrolls a configurable percentage of the page
 * Delay trigger — opens automatically after a configurable number of seconds
 * Manual mode — floating button click only
 * Exit intent — opens when the cursor moves toward the browser address bar (desktop)
-* Configurable exit intent delay
 
-= 🎯 Smart Upsell Engine =
-
-* Related product suggestions — powered automatically by WooCommerce
-* Cross-sell products — configured per product in WooCommerce
-* Same-category recommendations
-* Frequently Bought Together mode
-* Rule-based upsells — specific products appear when cart total exceeds a threshold
-* One-click add to cart directly from inside the drawer
-* Optional sale/featured badges and star ratings
-* Configurable section title and card/row layouts
-* Set maximum number of products shown
-
-= 🏆 Multi-Tier Cart Goals =
-
-* Up to 3 milestone goals on a visual progress track
-* Animated icon unlocks when each amount is reached
-* Progress message updates dynamically as items are added
-* Example: $50 → 🚚 Free Shipping · $100 → 🎁 Free Gift · $150 → 💰 10% Off
-
-= ⏱ Countdown Urgency Timer =
+= Countdown Urgency Timer =
 
 * Three modes: Cart Reserved, Discount Expires, Free Shipping Ends
 * Configurable duration (minutes)
 * Resets each time the drawer opens
-* Colour-coded per mode (red / amber / green)
+* Colour-coded per mode
 
-= 🎁 Free Shipping Progress Bar =
-
-* Fills as the customer adds items toward the threshold
-* Customizable messages with {amount} placeholder support
-* Animated success state when goal is reached
-
-= 💰 Coupons Inside the Cart =
+= Coupons Inside the Cart =
 
 * Collapsible coupon field in the cart footer
 * Apply and remove coupons without leaving the cart
 * Supports all standard WooCommerce coupon types
-* Clear validation and success messages
 
-= 📢 Cart Notice Banner =
-
-* Optional announcement bar at the top of the drawer
-* Custom text and background color
-
-= 🛡️ Trust Badges =
-
-* Optional secure checkout message in the cart footer
-* Fully customizable text
-
-= 🎨 Visual Builder with Live Preview =
+= Visual Builder with Live Preview =
 
 * 6 fully designed style presets (Modern, Minimal, Dark, Glass, Gold/Luxury, Convert)
-* Clicking a preset updates all color pickers instantly
 * Full color controls: primary, secondary, background, text, button, shipping bar
 * Typography: font size, font weight, price font size
 * Layout: drawer width, border radius, shadow style
-* Animation style selector
-* Device switcher in preview panel
 * Custom CSS field
 
-= 📱 Mobile Experience =
+= Mobile Experience =
 
-* Bottom sheet layout on screens <= 600px — slides up from the bottom
+* Bottom sheet layout on screens 600px and below — slides up from the bottom
 * Swipe down to close gesture
 * Floating button repositioned higher on mobile to avoid navigation overlap
-* Mobile-specific auto-open toggle
 
-= 🔧 Advanced & Display Controls =
-
-* Load only on WooCommerce pages (shop, product, cart)
-* Skip loading when cart is empty
-* Hide on specific pages by ID
-* WooCommerce cart fragments compatibility toggle
-* Disable animations option
-* AJAX refresh on cart update
-
-= 🔒 Secure & Performant =
+= Secure and Performant =
 
 * Nonce verification on every AJAX request
-* Capability checks (manage_woocommerce) on all admin save and reset actions
+* Capability checks on all admin save and reset actions
 * All inputs sanitized, all outputs escaped
-* Minified CSS and JS in production; full files loaded automatically when SCRIPT_DEBUG is on
-* Assets excluded from checkout and admin pages
+* Minified CSS and JS in production
 * HPOS (High Performance Order Storage) compatible
 * WooCommerce Blocks compatible
-* Fully works for both guests and logged-in users
 
 == Installation ==
 
 1. Upload the `cartly` folder to `/wp-content/plugins/`
 2. Activate the plugin via WordPress Admin → Plugins
-3. You will be taken to the **Cartly Welcome screen** — from there click **Customize Cart** to go to settings, or **View Live Demo** to see it on your store. The cart is already live.
+3. You will be taken to the welcome screen — click "Customize Cart" to configure, or visit any product page to see the cart already working.
 
 == Frequently Asked Questions ==
 
+= Does this plugin work with any theme? =
+Yes, it works with most WooCommerce compatible themes. Cartly injects its HTML via wp_footer and does not depend on any theme template hooks.
+
+= Does it support AJAX add to cart? =
+Yes, the cart updates instantly without page reload. All cart operations use WooCommerce's standard AJAX and fragment APIs.
+
+= Is it mobile friendly? =
+Yes, the side cart drawer uses a bottom sheet layout on mobile devices (600px and below) with swipe-to-close support.
+
 = Does it work immediately after activation? =
-Yes. No configuration is required. After activation you are taken to the Cartly Welcome screen — click Customize Cart to configure, or visit any product page directly to see the cart already working.
+Yes. No configuration is required. After activation you are taken to the welcome screen — click Customize Cart to configure, or visit any product page directly to see the cart already working.
 
 = Does it require any theme edits or shortcodes? =
-No. Cartly works entirely through standard WordPress hooks. No template files need to be edited and no shortcodes need to be placed.
+No. The plugin works entirely through standard WordPress hooks. No template files need to be edited.
 
 = Is it HPOS compatible? =
-Yes. Cartly declares compatibility with WooCommerce High Performance Order Storage (custom_order_tables).
+Yes. The plugin declares compatibility with WooCommerce High Performance Order Storage (custom_order_tables).
 
 = Does it work with WooCommerce Blocks? =
-Yes. Cartly declares compatibility with cart_checkout_blocks and is excluded from the native WooCommerce checkout page automatically.
-
-= Does it work with all themes? =
-Yes. Cartly injects its HTML via wp_footer and does not depend on any theme template hooks.
+Yes. The plugin declares compatibility with cart_checkout_blocks and is excluded from the native WooCommerce checkout page automatically.
 
 = Does it support guests (non-logged-in users)? =
 Yes. All AJAX cart endpoints work for both logged-in users and guests.
 
-= Does the sticky add-to-cart bar work with page builders? =
-The bar detects the native WooCommerce form.cart element. Most standard themes and page builders include this. Contact support if you use a heavily customised product template.
-
 = Can I restrict which pages the cart loads on? =
-Yes. The Advanced tab has a "Load Only on WooCommerce Pages" toggle and a field to hide on specific page IDs.
+Yes. The Advanced tab includes a "Load Only on WooCommerce Pages" toggle and a field to hide on specific page IDs.
 
 == Screenshots ==
 

@@ -104,11 +104,11 @@ No WordPress core files are modified or redistributed.
 ------------------------------------------------------------------------------
 
 All other code in this plugin — including all PHP classes, JavaScript,
-CSS, HTML templates, and admin panel code — is original work by Codelitix
+CSS, HTML templates, and admin panel code — is original work by DeftCoders
 and is licensed under GPL-2.0-or-later.
 
-Plugin URI : https://codecanyon.net/user/codelitix
+Plugin URI : https://github.com/deftcoders
 License    : GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-© Codelitix — https://codecanyon.net/user/codelitix
+© DeftCoders — https://github.com/deftcoders

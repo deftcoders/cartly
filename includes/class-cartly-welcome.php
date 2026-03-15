@@ -6,7 +6,7 @@
  * Includes 3-step setup wizard and live preview links.
  *
  * @package Cartly
- * @author  Codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -251,7 +251,7 @@ class Cartly_Welcome {
 				<div class="cw-onboard__footer">
 					<p>
 						<?php
-						/* translators: %s: HTML link to developer profile on CodeCanyon */
+						/* translators: %s: HTML link to developer GitHub profile */
 						$footer_text = __(
 							'Developed by %s · Premium WooCommerce Conversion Plugin',
 							'cartly'
@@ -267,7 +267,7 @@ class Cartly_Welcome {
 									),
 								)
 							),
-							'<a href="https://codecanyon.net/user/codelitix" target="_blank">Codelitix</a>'
+							'<a href="https://github.com/deftcoders" target="_blank">DeftCoders</a>'
 						);
 						?>
 					</p>

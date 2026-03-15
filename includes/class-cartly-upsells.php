@@ -6,7 +6,7 @@
  * and frequently bought together.
  *
  * @package Cartly
- * @author  Codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -1,11 +1,11 @@
 <?php
 /**
- * Codelitix - Cartly Core v5.
+ * DeftCoders - Cartly Core.
  * Loads minified assets, renders drawer and float button, passes config to JS.
  * Excludes cart/checkout pages. HPOS compatible.
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

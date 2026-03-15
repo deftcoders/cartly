@@ -7,7 +7,7 @@
  * button scrolls above the viewport. Clicking adds to cart and opens the drawer.
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

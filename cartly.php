@@ -1,11 +1,10 @@
 <?php
 /**
- * Plugin Name:       Cartly – Conversion Focused WooCommerce Side Cart, Sticky Add to Cart & Upsells
- * Plugin URI:        https://codecanyon.net/user/codelitix
+ * Plugin Name:       DeftCoders – Cartly Ajax Side Cart for WooCommerce
  * Description:       Boost WooCommerce conversions with a modern AJAX side cart drawer, floating cart, sticky add to cart bar, smart upsells, free shipping progress, and behavior-based triggers — all customizable with a live visual builder.
  * Version:           1.0.0
- * Author:            Codelitix
- * Author URI:        https://codecanyon.net/user/codelitix
+ * Author:            DeftCoders
+ * Author URI:        https://github.com/deftcoders
  * Text Domain:       cartly
  * Domain Path:       /languages
  * Requires at least: 6.0
@@ -34,11 +33,20 @@ define( 'CARTLY_INC', CARTLY_PATH . 'includes/' );
 
 
 // ──────────────────────────────────────────────────────────
-// Disable WordPress Emoji (Envato compliance)
-// Prevents loading https://s.w.org emoji CDN
+// Disable WordPress Emoji.
+// Prevents loading the emoji CDN.
 // ──────────────────────────────────────────────────────────
 add_action( 'init', 'cartly_disable_wp_emoji', 1 );
 
+/**
+ * Disable WordPress emoji scripts and styles.
+ *
+ * Prevents loading the emoji CDN and related scripts
+ * on both the front end and admin area.
+ *
+ * @since 1.0.0
+ * @return void
+ */
 function cartly_disable_wp_emoji() {
 
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -51,12 +59,15 @@ function cartly_disable_wp_emoji() {
 	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 
-	add_filter( 'tiny_mce_plugins', function( $plugins ) {
-		if ( is_array( $plugins ) ) {
-			return array_diff( $plugins, array( 'wpemoji' ) );
+	add_filter(
+		'tiny_mce_plugins',
+		function ( $plugins ) {
+			if ( is_array( $plugins ) ) {
+				return array_diff( $plugins, array( 'wpemoji' ) );
+			}
+			return array();
 		}
-		return array();
-	});
+	);
 }
 
 

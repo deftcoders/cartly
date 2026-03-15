@@ -1,9 +1,9 @@
 <?php
 /**
- * Codelitix - Cartly Admin Class v7.
+ * DeftCoders - Cartly Admin Class.
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -121,7 +121,7 @@ class Cartly_Admin {
 			wp_die( esc_html__( 'Access denied.', 'cartly' ) );
 		}
 		$settings = Cartly_Settings::get_all();
-		// Codelitix - wrap required for WP admin page positioning.
+		// Wrap required for WP admin page positioning.
 		echo '<div class="wrap cartly-admin-wrap">';
 		include CARTLY_PATH . 'admin/views/admin-panel.php';
 		echo '</div>';
@@ -134,8 +134,8 @@ class Cartly_Admin {
 		?>
 		<div style="max-width:500px;padding:48px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
 			<h2 style="font-size:22px;margin:0 0 8px;"><?php esc_html_e( 'Cartly Support', 'cartly' ); ?></h2>
-			<p style="color:#6b7280;margin:0 0 24px;"><?php esc_html_e( 'Need help? Contact codelitix through CodeCanyon.', 'cartly' ); ?></p>
-			<a href="https://codecanyon.net/user/codelitix" class="button button-primary" target="_blank"><?php esc_html_e( 'Open Support', 'cartly' ); ?></a>
+			<p style="color:#6b7280;margin:0 0 24px;"><?php esc_html_e( 'Need help? Visit our support page on GitHub.', 'cartly' ); ?></p>
+			<a href="https://github.com/deftcoders" class="button button-primary" target="_blank"><?php esc_html_e( 'Open Support', 'cartly' ); ?></a>
 		</div>
 		<?php
 	}

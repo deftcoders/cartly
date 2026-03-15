@@ -1,11 +1,11 @@
 <?php
 /**
- * Codelitix - Cartly Admin Panel v9 - Ultra Premium.
+ * DeftCoders - Cartly Admin Panel.
  * Preview: uses OLD working mock with CSS device classes.
  * Tabs: Cart Setup, Appearance, Upsells, Rewards, Behavior, Mobile, Advanced.
  *
  * @package Cartly
- * @author  codelitix
+ * @author  DeftCoders
  * @var array<string, mixed> $settings Settings passed into the template.
  */
 

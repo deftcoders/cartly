@@ -5,7 +5,7 @@
  * Features: Smart triggers, multi-tier cart goals, enhanced countdown, and FBT upsells.
  *
  * @package Cartly
- * @author  Codelitix
+ * @author  DeftCoders
  * @var array<string, mixed> $settings Settings passed into the template.
  */
 

@@ -25,7 +25,7 @@
  *   product_id, variation_id, qty, key, coupon
  *
  * @package Cartly
- * @author  Codelitix
+ * @author  DeftCoders
  * @since   1.0.0
  */
 
